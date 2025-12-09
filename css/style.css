@@ -1,32 +1,64 @@
 /* 背景が白い物 */
+/* 背景色を変える */
 .card-content{
-  /* 背景色を変える */
-  background-color: #ffffffCC;
+    background-color: #ffffffCC;
 }
 
 /* セクションのスタイル */
+/* 背景に画像を挿入する */
+#concept{
+    background-color: #ffffff;
+}
+#works{
+    background-color: #333;
+}
 #event{
-  /* 背景に画像を挿入する */
-  background-image: url('../img/works_08.jpg');
+    background-image: url('../img/works_08.jpg');
+}
+#blog{
+    background-color: #ffffff;
 }
 #contact{
     background-image: url("../img/works_10.jpg")
 }
-#works{
-    background-color: black;
-}
+
 
 /* ボタンのスタイル */
+/* 文字色を変える */
+.red-btn{
+    background-color: #820000;
+    color: #ffffff;
+}
 .black-btn{
-    background-color: black;
-    /* 文字色を変える */
-    color: white;
+    background-color: #333;
+    color: #ffffff;
 }
 .white-btn{
-    background-color: white;
-    color: black;
+    background-color: #ffffff;
+    color: #333;
 }
-.red-btn{
-    background-color: red;
-    color: white;
+
+/* テキストサイズ */
+/* フォント */
+/* 文字色 */
+h2, h3{
+    font-family: "Shippori Mincho", serif;
+    color: #333;
+}
+p,time{
+    font-family: "Noto Sans JP", sans-serif;
+}
+h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+h3{
+    font-size: 24px;
+    font-weight: medium;
+}
+p{
+    font-size: 16px;
+}
+time{
+    font-size: 14px;
 }
