@@ -1,0 +1,32 @@
+/* 背景が白い物 */
+.card-content{
+  /* 背景色を変える */
+  background-color: #ffffffCC;
+}
+
+/* セクションのスタイル */
+#event{
+  /* 背景に画像を挿入する */
+  background-image: url('../img/works_08.jpg');
+}
+#contact{
+    background-image: url("../img/works_10.jpg")
+}
+#works{
+    background-color: black;
+}
+
+/* ボタンのスタイル */
+.black-btn{
+    background-color: black;
+    /* 文字色を変える */
+    color: white;
+}
+.white-btn{
+    background-color: white;
+    color: black;
+}
+.red-btn{
+    background-color: red;
+    color: white;
+}

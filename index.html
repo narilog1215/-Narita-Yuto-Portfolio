@@ -11,8 +11,6 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#main">メインコンテンツへスキップ</a>
-
     <header>
         <img src="./img/logo_mark_redgray.png" alt="Wonlabo House ロゴ" width="120" height="40">
         <nav aria-label="主要メニュー">
@@ -22,7 +20,7 @@
                 <li><a href="#works">施工実績</a></li>
                 <li><a href="#event">イベント</a></li>
                 <li><a href="#blog">ブログ</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
+                <li><a href="#contact" class="btn red-btn">お問い合わせ</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +41,7 @@
                 <p>素材やディテールにこだわり、住む人の個性が光る空間を提案。</p>
                 <p>美しさだけでなく、心地よさや使いやすさにも配慮した設計で、毎日を特別なものに。</p>
                 <p>あなたの理想を超える、唯一無二の住まいを私たちと一緒につくりませんか？</p>
-                <a href="#contact" class="btn">もっと見る</a>
+                <a href="#contact" class="btn black-btn">もっと見る</a>
             </div>
         </section>
 
@@ -61,26 +59,27 @@
                         <img src="./img/works_04.jpg" alt="寝室の施工事例" width="400" height="300" loading="lazy">
                     </figure>
                 </div>
-                <a href="#contact" class="btn">もっと見る</a>
+                <a href="#contact" class="btn white-btn">もっと見る</a>
             </div>
         </section>
 
         <section id="event" class="event">
-            <div class="event-bg">
-                <img src="./img/works_08.jpg" alt="" width="1200" height="600" loading="lazy" aria-hidden="true">
-            </div>
             <div class="container">
                 <h2>イベント</h2>
                 <div class="event-list">
                     <article class="event-item">
-                        <img src="./img/home.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
-                        <h3>オープンハウス見学会</h3>
-                        <p>洗練されたデザインや充実した機能を実際に体感して頂けます。</p>
+                        <div class="card-content">
+                            <img src="./img/home.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
+                            <h3>オープンハウス見学会</h3>
+                            <p>洗練されたデザインや充実した機能を実際に体感して頂けます。</p>
+                        </div>
                     </article>
                     <article class="event-item">
-                        <img src="./img/communication.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
-                        <h3>家づくり相談会</h3>
-                        <p>理想のお家づくりを叶えるため悩みや疑問を解決します。</p>
+                        <div class="card-content">
+                            <img src="./img/communication.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
+                            <h3>家づくり相談会</h3>
+                            <p>理想のお家づくりを叶えるため悩みや疑問を解決します。</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -111,23 +110,21 @@
                         <p>Wonlabo House（ワンラボハウス）のホームページをリニューアルしました！</p>
                     </article>
                 </div>
+                <a href="#contact" class="btn black-btn">もっと見る</a>
             </div>
         </section>
 
         <section id="contact" class="contact">
-            <div class="contact-bg">
-                <img src="./img/works_10.jpg" alt="" width="1200" height="600" loading="lazy" aria-hidden="true">
-            </div>
             <div class="container">
                 <h2>お問い合わせ</h2>
                 <div class="contact-methods">
-                    <div class="contact-item">
+                    <div class="contact-item card-content">
                         <img src="./img/phone.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
                         <h3>お電話で相談</h3>
                         <p><a href="tel:00-0123-4567">00-0123-4567</a></p>
                         <p><small>【受付時間】9:00~18:00【定休日】水曜日</small></p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item card-content">
                         <img src="./img/mail.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
                         <h3>WEBでご相談</h3>
                         <p><a href="#contact-form">お問い合わせフォーム</a></p>
