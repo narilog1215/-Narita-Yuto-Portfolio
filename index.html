@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <!-- 文字コード指定 -->
     <meta charset="UTF-8">
+    <!-- レスポンシブ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="洗練されたデザインと機能美を両立する注文住宅のWonlabo House（ワンラボハウス）。理想の住まいをカタチにします。">
-    <title>Wonlabo House - デザイン×機能美を追求した注文住宅</title>
+    <!-- ページ説明・タイトル -->
+    <meta name="description" content="">
+    <title>Wonlabo House - 洗練されたデザイン、心地良さが続く家。</title>
+    <!-- ファビコン -->
     <link rel="icon" href="./img/logo_mark_redgray.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- フォント -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
 </head>
 
+
+
 <body>
+    <!-- ヘッダー -->
     <header>
-        <img src="./img/logo_mark_redgray.png" alt="Wonlabo House ロゴ" width="120" height="40">
-        <nav aria-label="主要メニュー">
+        <h1 id="logo">
+            <a href="#home">
+                <img src="./img/logo_mark_redgray.png" alt="Wonlabo House ロゴ">
+            </a>
+        </h1>
+        <nav>
             <ul>
-                <li><a href="#home" aria-current="page">ホーム</a></li>
+                <li><a href="#home">ホーム</a></li>
                 <li><a href="#concept">コンセプト</a></li>
                 <li><a href="#works">施工実績</a></li>
                 <li><a href="#event">イベント</a></li>
@@ -26,119 +39,144 @@
         </nav>
     </header>
 
-    <main id="main">
-        <section id="home" class="hero">
-            <img src="./img/works_11.jpg" alt="モダンな外観の注文住宅" width="1200" height="800" loading="eager">
-            <h1>
-                <img src="./img/Frame 1.png" alt="Wonlabo House - デザイン×機能美を追求した理想の住まい" width="400" height="200" loading="eager">
-            </h1>
-        </section>
 
-        <section id="concept" class="concept">
-            <div class="container">
-                <h2>コンセプト</h2>
-                <p class="lead">「デザイン×機能美」を追求した、理想の住まいをカタチに。</p>
-                <p>私たちは、洗練されたデザインと快適な暮らしを両立させる注文住宅を手がけています。</p>
-                <p>素材やディテールにこだわり、住む人の個性が光る空間を提案。</p>
-                <p>美しさだけでなく、心地よさや使いやすさにも配慮した設計で、毎日を特別なものに。</p>
-                <p>あなたの理想を超える、唯一無二の住まいを私たちと一緒につくりませんか？</p>
-                <a href="#contact" class="btn black-btn">もっと見る</a>
+
+    <main>
+    <!-- メインビジュアル -->
+    <section id="home">
+        <div class="container">
+            <img src="./img/logo_mark_redwhite.png" alt="Wonlabo House ロゴ">
+            <h2>洗練されたデザイン、心地良さが続く家。</h2>
+        </div>
+    </section>
+
+
+
+    <!-- コンセプト -->
+    <section id="concept">
+        <h2 class="concept-title">コンセプト</h2>
+        <div class="concept-body">
+            <h3>「デザイン×機能美」を追求した、理想の住まいをカタチに。</h3>
+            <div class="concept-text">
+                <p>私たちは、洗練されたデザインと快適な暮らしを両立させる注文住宅を手がけています。<br>
+                素材やディテールにこだわり、住む人の個性が光る空間を提案。<br><br>
+                美しさだけでなく、心地よさや使いやすさにも配慮した設計で、毎日を特別なものに。<br>
+                あなたの理想を超える、唯一無二の住まいを私たちと一緒につくりませんか？</p>
             </div>
-        </section>
+        </div>
+        <div class="concept-action">
+            <a href="#contact" class="btn black-btn">もっと見る</a>
+        </div>
+    </section>
 
-        <section id="works" class="works">
-            <div class="container">
-                <h2>施工実績</h2>
-                <div class="works-grid">
-                    <figure>
-                        <img src="./img/works_03.jpg" alt="リビングルームの施工事例" width="400" height="300" loading="lazy">
-                    </figure>
-                    <figure>
-                        <img src="./img/works_09.jpg" alt="キッチンの施工事例" width="400" height="300" loading="lazy">
-                    </figure>
-                    <figure>
-                        <img src="./img/works_04.jpg" alt="寝室の施工事例" width="400" height="300" loading="lazy">
-                    </figure>
+
+
+    <!-- 施工実績 -->
+    <section id="works">
+        <h2 class="works-title">施工実績</h2>
+        <div class="works-body">
+            <div class="works-list">
+                <img src="./img/works_03.jpg" alt="モダンデザインの注文住宅 外観">
+                <img src="./img/works_09.jpg" alt="開放感のあるリビング空間">
+                <img src="./img/works_04.jpg" alt="自然素材を活かした住宅デザイン">
+            </div>
+        </div>
+        <div class="works-action">
+            <a href="#contact" class="btn white-btn">もっと見る</a>
+        </div>
+    </section>
+
+
+
+    <!-- イベント -->
+    <section id="event">
+        <h2 class="event-title">イベント</h2>
+        <div class="event-body">
+            <div class="event-list">
+                <img src="./img/home.png" alt="オープンハウス見学会のアイコン">
+                <h3>オープンハウス見学会</h3>
+                <p>洗練されたデザインや<br>
+                    充実した機能を実際に体感して頂けます。</p>
                 </div>
-                <a href="#contact" class="btn white-btn">もっと見る</a>
-            </div>
-        </section>
-
-        <section id="event" class="event">
-            <div class="container">
-                <h2>イベント</h2>
                 <div class="event-list">
-                    <article class="event-item">
-                        <div class="card-content">
-                            <img src="./img/home.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
-                            <h3>オープンハウス見学会</h3>
-                            <p>洗練されたデザインや充実した機能を実際に体感して頂けます。</p>
-                        </div>
-                    </article>
-                    <article class="event-item">
-                        <div class="card-content">
-                            <img src="./img/communication.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
-                            <h3>家づくり相談会</h3>
-                            <p>理想のお家づくりを叶えるため悩みや疑問を解決します。</p>
-                        </div>
-                    </article>
+                    <img src="./img/communication.png" alt="家づくり相談会のアイコン">
+                    <h3>家づくり相談会</h3>
+                    <p>理想のお家づくりを叶えるため<br>
+                        悩みや疑問を解決します。</p>
+                    </div>
+                </div>
+            </section>
+
+
+
+    <!-- ブログ -->
+    <section id="blog">
+        <h2 class="blog-title">ブログ</h2>
+        <div class="blog-body">
+            <div class="blog-list">
+                <img src="./img/family.jpg" alt="家族がくつろぐリビングの様子">
+                <div class="blog-text">
+                    <time datetime="2025-04-19">2025.04.19</time>
+                    <h3>新築見学会のご予約開始</h3>
+                    <p>中野区の閑静な住宅街にオーナーさんのこだわりが詰まったお家が誕生しました。5月1日〜5月14日まで新築見学会を開催いたします。完全ご予約制にてご案内いたしますので、ご希望の方はイベントお申し込みフォームよりご連絡ください。</p>
                 </div>
             </div>
-        </section>
-
-        <section id="blog" class="blog">
-            <div class="container">
-                <h2>ブログ</h2>
-                <div class="blog-list">
-                    <article class="blog-item">
-                        <img src="./img/family.jpg" alt="家族の写真" width="400" height="300" loading="lazy">
-                        <time datetime="2025-04-19">2025.04.19</time>
-                        <h3>新築見学会のご予約開始</h3>
-                        <p>中野区の閑静な住宅街にオーナーさんのこだわりが詰まったお家が誕生しました。5月1日〜5月14日まで新築見学会を開催いたします。完全ご予約制にてご案内いたしますので、ご希望の方はイベントお申し込みフォームよりご連絡ください。</p>
-                    </article>
-
-                    <article class="blog-item">
-                        <img src="./img/modelroom.jpg" alt="モデルルームの内観" width="400" height="300" loading="lazy">
-                        <time datetime="2025-03-21">2025.03.21</time>
-                        <h3>本社移転のお知らせ</h3>
-                        <p>この度、Wonlabo House（ワンラボハウス）の本社が板橋区から豊島区へ移転しました。モデルルーム併設でよりリアルにお家づくりを進めていけるようになっております。ぜひ、新しい本社に遊びに来てください！</p>
-                    </article>
-
-                    <article class="blog-item">
-                        <img src="./img/HP_renewal.jpg" alt="ホームページリニューアルのイメージ" width="400" height="300" loading="lazy">
-                        <time datetime="2025-03-01">2025.03.01</time>
-                        <h3>ホームページリニューアル</h3>
-                        <p>Wonlabo House（ワンラボハウス）のホームページをリニューアルしました！</p>
-                    </article>
+            <hr>
+            <div class="blog-list">
+                <img src="./img/modelroom.jpg" alt="新しく移転した本社モデルルーム">
+                <div class="blog-text">
+                    <time datetime="2025-03-21">2025.03.21</time>
+                    <h3>本社移転のお知らせ</h3>
+                    <p>この度、Wonlabo House（ワンラボハウス）の本社が板橋区から豊島区へ移転しました。モデルルーム併設でよりリアルにお家づくりを進めていけるようになっております。ぜひ、新しい本社に遊びに来てください！</p>
                 </div>
-                <a href="#contact" class="btn black-btn">もっと見る</a>
             </div>
-        </section>
+            <hr>
+            <div class="blog-list">
+                <img src="./img/HP_renewal.jpg" alt="Wonlabo House ホームページリニューアル">
+                <div class="blog-text">
+                    <time datetime="2025-03-01">2025.03.01</time>
+                    <h3>ホームページリニューアル</h3>
+                    <p>House（ワンラボハウス）のホームページをリニューアルしました！</p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-action">
+            <a href="#contact" class="btn black-btn">もっと見る</a>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>お問い合わせ</h2>
-                <div class="contact-methods">
-                    <div class="contact-item card-content">
-                        <img src="./img/phone.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
-                        <h3>お電話で相談</h3>
-                        <p><a href="tel:00-0123-4567">00-0123-4567</a></p>
-                        <p><small>【受付時間】9:00~18:00【定休日】水曜日</small></p>
-                    </div>
-                    <div class="contact-item card-content">
-                        <img src="./img/mail.png" alt="" width="60" height="60" loading="lazy" aria-hidden="true">
-                        <h3>WEBでご相談</h3>
-                        <p><a href="#contact-form">お問い合わせフォーム</a></p>
-                    </div>
+
+
+    <!-- お問い合わせ -->
+    <section id="contact">
+        <h2 class="contact-title">お問い合わせ</h2>
+        <div class="contact-body">
+            <div class="contact-list">
+                <img src="./img/phone.png" alt="電話でのお問い合わせ">
+                <h3>お電話で相談</h3>
+                <p>00-0123-4567<br>
+                    受付時間 9:00〜18:00（定休日：水曜日）</p>
+                </div>
+                <div class="contact-list">
+                    <img src="./img/mail.png" alt="メールでのお問い合わせ">
+                    <h3>WEBでご相談</h3>
+                    <p>お問い合わせフォームはこちら</p>
                 </div>
             </div>
         </section>
     </main>
 
+
+
+    <!-- フッター -->
     <footer>
+        <h1 id="logo">
+            <a href="#home">
+                <img src="./img/logo_mark_redgray.png" alt="Wonlabo House ロゴ">
+            </a>
+        </h1>
         <div class="container">
-            <img src="./img/logo_mark_redgray.png" alt="Wonlabo House ロゴ" width="120" height="40" loading="lazy">
-            <p><small>Copyright © 2020 Wonlabo House. All Rights Reserved.</small></p>
+            <h4>Copyright © 2020 Wonlabo House. All Rights Reserved.</h4>
         </div>
     </footer>
 </body>

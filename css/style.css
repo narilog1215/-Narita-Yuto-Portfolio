@@ -1,64 +1,326 @@
-/* 背景が白い物 */
-/* 背景色を変える */
-.card-content{
-    background-color: #ffffffCC;
-}
-
-/* セクションのスタイル */
-/* 背景に画像を挿入する */
-#concept{
+/* リセット・共通 */
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
     background-color: #ffffff;
-}
-#works{
-    background-color: #333;
-}
-#event{
-    background-image: url('../img/works_08.jpg');
-}
-#blog{
-    background-color: #ffffff;
-}
-#contact{
-    background-image: url("../img/works_10.jpg")
+    text-align: left;
 }
 
 
-/* ボタンのスタイル */
-/* 文字色を変える */
-.red-btn{
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+img {
+    max-width: 100%;
+}
+
+/* 見出し・文字 */
+h2 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+h3 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+h4{
+    font-size: 14px;
+    font-weight: 400;
+}
+p {
+    font-weight: 400;
+}
+time {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+/* 共通パーツ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.15);
+}
+.red-btn {
+    width: 130px;
+    height: 40px;
     background-color: #820000;
     color: #ffffff;
 }
-.black-btn{
+.black-btn {
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
     background-color: #333;
     color: #ffffff;
 }
-.white-btn{
+.white-btn {
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
     background-color: #ffffff;
     color: #333;
 }
 
-/* テキストサイズ */
-/* フォント */
-/* 文字色 */
-h2, h3{
-    font-family: "Shippori Mincho", serif;
-    color: #333;
+
+
+/* ヘッダー */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: #fff;
+    z-index: 1000;
 }
-p,time{
-    font-family: "Noto Sans JP", sans-serif;
+header h1 img {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 39px;
 }
-h2{
-    font-size: 32px;
-    font-weight: bold;
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-h3{
-    font-size: 24px;
-    font-weight: medium;
+header nav ul li{
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.15);
 }
-p{
-    font-size: 16px;
+
+
+
+/* セクション */
+#home {
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+	justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    text-align: center;
+	height: 100vh; /* ウィンドウの高さに合わせて全画面表示 */
+	padding-top: 100px;	/* ヘッダーの高さ分を上の内余白として設定（ヘッダーの高さを抜いた範囲内でキャッチコピー画像が上下中央配置となる） */ 
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/works_11.jpg");
+	background-position: center;
+	background-size: cover; /* 要素全体を覆うように自動調整 */
 }
-time{
-    font-size: 14px;
+#home h2 {
+    color: #fff;
+}
+#home img {
+	width: 80px;
+    height: 78px;
+}
+
+
+
+#concept {
+    padding: 70px 0;
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    flex-direction: column;
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+	justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    text-align: center;
+}
+.concept-title {
+
+}
+.concept-body {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.concept-text p {
+    margin-bottom: 1em;
+}
+.concept-action {
+
+}
+
+
+
+#works {
+    padding: 70px 0;
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    flex-direction: column;/* テキストを左右中央配置 */
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+	justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    text-align: center;/* テキストを左右中央配置 */
+    background-color: #333;
+}
+.works-title {
+    color: #fff;
+}
+.works-body {
+
+    max-width: 980px;
+    margin: 0 auto;
+}
+.works-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#works img {
+    width: 260px;
+    height: 260px;
+}
+.works-action {
+
+}
+
+
+
+#event {
+    padding: 70px 0;
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    flex-direction: column;/* テキストを左右中央配置 */
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+	justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    text-align: center;/* テキストを左右中央配置 */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/works_08.jpg");
+    background-position: center;
+	background-size: cover; /* 要素全体を覆うように自動調整 */
+}
+.event-title {
+    color: #fff;
+}
+.event-body {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.event-list {
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    flex-direction: column;/* テキストを左右中央配置 */
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+	justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 440px;
+    height: 260px;
+}
+#event img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+#blog {
+    padding: 70px 0;
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    flex-direction: column;/* テキストを左右中央配置 */
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+    justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    text-align: center;
+}
+.blog-title {
+
+}
+.blog-body {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.blog-list {
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    align-items: center; /* キャッチコピー画像を上下中央配置 */
+    justify-content: center; /* キャッチコピー画像を左右中央配置 */
+}
+.blog-text {
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    flex-direction: column;/* テキストを左右中央配置 */
+    text-align: left;
+}
+#blog img {
+    width: 220px;
+    height: 140px;
+    margin-right: 25px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+.blog-action {
+
+}
+
+
+
+#contact {
+    padding: 70px 0;
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    flex-direction: column;/* テキストを左右中央配置 */
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+	justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    text-align: center;/* テキストを左右中央配置 */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/works_10.jpg");
+    background-position: center;
+	background-size: cover; /* 要素全体を覆うように自動調整 */
+}
+.contact-title {
+    color: #fff;
+}
+.contact-body {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.contact-list {
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+    flex-direction: column;/* テキストを左右中央配置 */
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+	justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 440px;
+    height: 260px;
+    margin: auto;
+}
+#contact img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* フッター */
+footer {
+    height: 100px;
+    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
+	align-items: center; /* キャッチコピー画像を上下中央配置 */
+    justify-content: center; /* キャッチコピー画像を左右中央配置 */
+    text-align: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+footer h1 img {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 39px;
 }
