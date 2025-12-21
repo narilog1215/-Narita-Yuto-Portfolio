@@ -1,4 +1,12 @@
 /* リセット・共通 */
+html{
+    scroll-behavior: smooth;
+}
+
+section, #home, #concept, #works, #event, #blog, #contact {
+    scroll-margin-top: 140px;
+}
+
 body {
     margin: 0;
     font-family: "Noto Sans JP", sans-serif;
@@ -143,18 +151,12 @@ header nav ul li{
 	justify-content: center; /* キャッチコピー画像を左右中央配置 */
     text-align: center;
 }
-.concept-title {
-
-}
 .concept-body {
     max-width: 980px;
     margin: 0 auto;
 }
 .concept-text p {
     margin-bottom: 1em;
-}
-.concept-action {
-
 }
 
 
@@ -185,9 +187,6 @@ header nav ul li{
     width: 260px;
     height: 260px;
 }
-.works-action {
-
-}
 
 
 
@@ -210,7 +209,7 @@ header nav ul li{
     align-items: center;
     gap: 25px;
     max-width: 980px;
-    margin: 0 auto;
+    margin: 0 100px;
 }
 .event-list {
     display: flex; /* レイアウト指定のためフレックスボックスに変更 */
@@ -220,52 +219,60 @@ header nav ul li{
     background-color: rgba(255, 255, 255, 0.8);
     width: 440px;
     height: 260px;
+    margin-bottom: 100px;
 }
 #event img {
     width: 40px;
     height: 40px;
+    margin-bottom: 6px;
+}
+.event-list h3 {
+    margin: 6px 0;
+}
+.event-list p {
+    margin-top: 0;
+    line-height: 1.35;
 }
 
 
 
 #blog {
     padding: 70px 0;
-    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
-    flex-direction: column;/* テキストを左右中央配置 */
-	align-items: center; /* キャッチコピー画像を上下中央配置 */
-    justify-content: center; /* キャッチコピー画像を左右中央配置 */
-    text-align: center;
-}
-.blog-title {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* セクション全体を中央 */
 }
 .blog-body {
     max-width: 980px;
+    width: 100%;
     margin: 0 auto;
 }
 .blog-list {
-    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
-    align-items: center; /* キャッチコピー画像を上下中央配置 */
-    justify-content: center; /* キャッチコピー画像を左右中央配置 */
-}
-.blog-text {
-    display: flex; /* レイアウト指定のためフレックスボックスに変更 */
-    flex-direction: column;/* テキストを左右中央配置 */
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* ← 左に張り付ける */
 }
 #blog img {
     width: 220px;
     height: 140px;
     margin-right: 25px;
+    flex-shrink: 0; /* 画像が潰れないように */
 }
-hr {
-    border: none;
-    height: 1px;
-    background-color: #ddd;
-    margin: 30px 0;
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 6px 0;
 }
-.blog-action {
-
+.blog-time{
+    margin-bottom: 6px;
+}
+.blog-h3{
+    margin: 6px 0;
+}
+.blog-p{
+    margin-top: 0;
+    line-height: 1.35;
 }
 
 
@@ -299,13 +306,21 @@ hr {
     background-color: rgba(255, 255, 255, 0.8);
     width: 440px;
     height: 260px;
-    margin: auto;
+    margin-bottom: 100px;
 }
 #contact img {
     width: 40px;
     height: 40px;
+    margin-bottom: 6px;
+}
+.contact-list h3 {
+    margin: 6px 0;
 }
 
+.contact-list p {
+    margin-top: 0;
+    line-height: 1.35;
+}
 
 
 /* フッター */
@@ -323,4 +338,8 @@ footer h1 img {
     align-items: center;
     width: 40px;
     height: 39px;
+    margin-bottom: 0;
+}
+footer h4 {
+    margin-top: 0;
 }
